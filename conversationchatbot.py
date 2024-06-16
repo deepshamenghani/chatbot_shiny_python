@@ -1,11 +1,11 @@
-# Install packages if needed
-# pip install openai
-# pip install python-dotenv
-
 from openai import OpenAI
 import os
+import dotenv
 
-# Create an instruction for our bot
+dotenv.load_dotenv()
+client = OpenAI(api_key=os.getenv('OPENAI_API'))
+
+# Create an instruction for the bot
 conversation = [{"role": "system", "content": "You are an assistant."}]
 
 def ask_question(inputquestion, api_key):
@@ -25,3 +25,5 @@ def ask_question(inputquestion, api_key):
     assistant_response = response.choices[0].message.content
 
     return assistant_response
+
+# ask_question("What is customer churn? Respond in less than 10 words")
