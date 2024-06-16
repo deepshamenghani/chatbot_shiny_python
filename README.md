@@ -2,6 +2,8 @@
 
 This repository contains the code and resources for incorporating a Large Language Model (LLM) chatbot into a Shiny for Python web application using OpenAI. The goal is to enhance user interaction by answering questions about the application's content dynamically. 
 
+![shinyapp_withkeyinput_unlooped](https://github.com/deepshamenghani/chatbot_shiny_python/assets/46545400/b33b23d3-46a3-41c2-873d-1c198604fd98)
+
 ## Features
 
 - **Interactive Chatbot:** An LLM chatbot that can answer user questions in real-time.
